@@ -81,13 +81,16 @@ The following options are available:
 
 - `{generate, client | server | both}` - determines which modules will be
   generated. In any case a .hrl file will be generated, with the name
-  <Service>.hrl (where <Service> is the name of the Service, see above).
+  \<Service\>.hrl (where \<Service\> is the name of the Service, see above).
+
+- `{hrl_name, string()}` - The name of the service module. Defaults to
+  \<Service\>.hrl.
 
 - `{client_name, string()}` - The name of the client module. Defaults to
-  <Service>\_client.hrl.
+  \<Service\>\_client.hrl.
 
 - `{server_name, string()}` - The name of the server module. Defaults to
-  <Service>\_server.hrl.
+  \<Service\>\_server.hrl.
 
 - `{http_client, module()}` - The name of the module that implements the
   HTTP client integration API. The `soap` application provides the following
